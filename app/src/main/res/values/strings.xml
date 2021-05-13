@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">End</string>
+    <string name="item_settings">Настройки</string>
+    <string name="item_search">Поиск</string>
+    <string name="item_basket">Выход</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="interest">
+        <item>Выберите значение</item>
+        <item>Спорт</item>
+        <item>музыка</item>
+        <item>животные</item>
+        <item>путешествия</item>
+    </string-array>
+    <string-array name="animals">
+        <item>Выберите значение</item>
+        <item>кошка</item>
+        <item>собака</item>
+        <item>рыбки</item>
+        <item>птички</item>
+    </string-array>
+    <string-array name="Viddeyat">
+        <item>Выберите значение</item>
+        <item>школота</item>
+        <item>работяга</item>
+        <item>недееспособный</item>
+        <item>отдыхает или таксует для себя</item>
+    </string-array>
+</resources>
