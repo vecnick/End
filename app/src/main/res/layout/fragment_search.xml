@@ -4,53 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700"
+    android:background="@color/BACK"
     tools:context=".SearchFragment">
 
     <LinearLayout
-        android:layout_width="393dp"
-        android:layout_height="695dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteX="-4dp"
         tools:layout_editor_absoluteY="0dp">
 
         <ImageView
             android:id="@+id/imageViewPresent"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="396dp"
-            android:scaleType="fitCenter"
-            android:background="@drawable/podarok" />
+            android:background="@drawable/podarok"
+            android:scaleType="fitCenter" />
 
         <TextView
             android:id="@+id/textViewDescription"
             android:layout_width="match_parent"
-            android:layout_height="153dp"
-            android:text="Нажмите для поиска картинки"
-            android:textColor="#FFC107"
+            android:layout_height="133dp"
+            android:text="Нажмите для поиска подарка"
+            android:textColor="@color/FIRSTBLACK"
             android:textSize="36sp" />
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:orientation="horizontal">
+            android:layout_height="220dp">
 
-            <Button
-                android:background="@drawable/custom_button"
+            <ImageButton
                 android:id="@+id/buttonLink"
-                android:layout_width="100dp"
+                android:layout_width="170dp"
                 android:layout_height="100dp"
-                android:layout_weight="1"
-                android:text="Перейти" />
-
-            <Button
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/custom_button"
-                android:id="@+id/buttonNext"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:text="Следующий" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        </LinearLayout>
+            <ImageButton
+                android:id="@+id/buttonNext"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Перейти"
+                android:textColor="@color/FIRSTBLACK"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonLink"
+                app:layout_constraintEnd_toEndOf="@+id/buttonLink"
+                app:layout_constraintStart_toStartOf="@+id/buttonLink"
+                app:layout_constraintTop_toTopOf="@+id/buttonLink" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поиск"
+                android:textColor="@color/FIRSTBLACK"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonNext"
+                app:layout_constraintEnd_toEndOf="@+id/buttonNext"
+                app:layout_constraintStart_toStartOf="@+id/buttonNext"
+                app:layout_constraintTop_toTopOf="@+id/buttonNext" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

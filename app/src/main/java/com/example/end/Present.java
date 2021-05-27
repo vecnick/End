@@ -2,10 +2,10 @@ package com.example.end;
 
 public class Present {
     private String name = "";
-    private String pic ="";
+    private int pic;
     private String url ="";
 
-    public Present(String name, String pic, String url) {
+    public Present(String name, int pic, String url) {
         setName(name);
         setUrl(url);
         setPic(pic);
@@ -15,7 +15,7 @@ public class Present {
         return name;
     }
 
-    public String getPic() {
+    public int getPic() {
         return pic;
     }
 
@@ -27,7 +27,7 @@ public class Present {
         this.name = name;
     }
 
-    public void setPic(String pic) {
+    public void setPic(int pic) {
         this.pic = pic;
     }
 

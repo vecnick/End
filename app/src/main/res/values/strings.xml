@@ -4,25 +4,21 @@
     <string name="item_search">Поиск</string>
     <string name="item_basket">Выход</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string-array name="interest">
-        <item>Выберите значение</item>
-        <item>Спорт</item>
-        <item>музыка</item>
-        <item>животные</item>
-        <item>путешествия</item>
+    <string-array name="sport">
+        <item>Не знаю</item>
+        <item>да</item>
+        <item>нет</item>
     </string-array>
     <string-array name="animals">
-        <item>Выберите значение</item>
+        <item>Не знаю</item>
         <item>кошка</item>
         <item>собака</item>
         <item>рыбки</item>
-        <item>птички</item>
     </string-array>
     <string-array name="Viddeyat">
-        <item>Выберите значение</item>
-        <item>школота</item>
-        <item>работяга</item>
-        <item>недееспособный</item>
-        <item>отдыхает или таксует для себя</item>
+        <item>Не знаю</item>
+        <item>школьник</item>
+        <item>студент</item>
+        <item>работающий</item>
     </string-array>
 </resources>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700"
+    android:background="@color/BACK"
     tools:context=".SettingsFragment">
 
     <LinearLayout
@@ -14,32 +15,24 @@
         <TextView
             android:id="@+id/textViewSettings"
             android:layout_width="match_parent"
-            android:layout_height="99dp"
+            android:layout_height="124dp"
             android:gravity="center"
-            android:text="Настройки"
-            android:textColor="#FFC107"
+            android:text="Расскажите о человеке, которому хотите сделать подарок"
+            android:textColor="@color/FIRSTBLACK"
             android:textIsSelectable="false"
-            android:textSize="36sp" />
-
-        <TextView
-            android:id="@+id/TextViewAge"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Введите Возраст:"
             android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/editTextAge"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName" />
+            android:layout_height="2sp"
+            android:background="#2196F3" />
 
         <TextView
             android:id="@+id/TextViewGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Выбирете пол:"
+            android:text="Пол:"
+            android:textColor="@color/FIRSTBLACK"
             android:textSize="24sp" />
 
         <RadioGroup
@@ -52,34 +45,75 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Male" />
+                android:text="М"
+                android:textColor="@color/FIRSTBLACK" />
 
             <RadioButton
                 android:id="@+id/radioButtonFemale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Female" />
+                android:text="Ж"
+                android:textColor="@color/FIRSTBLACK" />
         </RadioGroup>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#2196F3" />
+
+        <TextView
+            android:id="@+id/TextViewAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сколько ему/ей лет?"
+            android:textColor="@color/FIRSTBLACK"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="300dp"
+            android:background="@drawable/custom_button"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:layout_marginTop="10dp"
+            android:background="#2196F3" />
 
         <TextView
             android:id="@+id/textViewInterest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Выберите возможные интересы"
+            android:text="Выберите род деятельности:"
+            android:textColor="@color/FIRSTBLACK"
             android:textSize="24sp" />
 
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/interest" />
+            android:entries="@array/Viddeyat" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#2196F3" />
 
         <TextView
             android:id="@+id/textViewVidDeyatelnosti"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Вид деятельности???"
+            android:text="Занимается cпортом?"
+            android:textColor="@color/FIRSTBLACK"
             android:textSize="24sp" />
 
         <Spinner
@@ -87,14 +121,21 @@
             android:id="@+id/spinner2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/Viddeyat"
+            android:entries="@array/sport"
             android:spinnerMode="dialog" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#2196F3" />
 
         <TextView
             android:id="@+id/textViewPitomci"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Выберите домашнего питомца"
+            android:textColor="@color/FIRSTBLACK"
             android:textSize="24sp" />
 
         <Spinner
@@ -103,13 +144,58 @@
             android:layout_height="wrap_content"
             android:entries="@array/animals" />
 
-        <Button
-            android:id="@+id/buttonSearch"
+        <View
+            android:id="@+id/view5"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Нажми для поиска подарка с данными настройками"
-            android:textSize="30dp"
-            android:textColor="@color/orange"/>
+            android:layout_height="2sp"
+            android:background="#2196F3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="На какую сумму вы рассчитываете?"
+            android:textColor="@color/FIRSTBLACK"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextAge2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="300dp"
+            android:background="@drawable/custom_button"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/buttonSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/custom_button" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Выбрать подарок"
+                android:textColor="@color/FIRSTBLACK"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonSearch"
+                app:layout_constraintEnd_toEndOf="@+id/buttonSearch"
+                app:layout_constraintStart_toStartOf="@+id/buttonSearch"
+                app:layout_constraintTop_toTopOf="@+id/buttonSearch" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
